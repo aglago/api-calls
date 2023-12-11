@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.product {
+    height: 40vh;
+    width: 15vw;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+    background-color: aliceblue;
+}
+
+.product img {
+    height: 60%;
+    width: 100%;
+}
+
+.product .desc * {
+    margin: 0;
+}
+
+.product .desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.desc h4 {
+    font-size: 15px;
+}
+
+.desc p {
+    font-size: 14px;
+}
