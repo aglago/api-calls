@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>API calls</title>
 </head>
+
 <body>
+    <header>
+        <div>
+            <img src="./images/icons/2674098_object_shopping_bag_essential_web_icon.png" alt="" class="cart_icon"
+                id="cart_icon" />
+        </div>
+    </header>
     <!--Page to collect the products-->
-    <section id="products">
-        
-    </section>
+    <section id="products"></section>
+
+    <!--Cart-->
+    <div class="cart hidden" id="cart">
+        <div class="cart_items" id="cart_items">
+            <h2>Cart</h2>
+            <!--Cart items here-->
+        </div>
+
+        <div>
+            <div class="cart_buttons">
+                <button id="clear_cart">Clear Cart</button>
+                <button id="checkout">Checkout</button>
+            </div>
+
+            <div class="cart_total">
+                <h3>Total: <span id="cart_total_price"></span></h3>
+                
+            </div>
+        </div>
+    </div>
 
     <!--Javascript-->
     <script src="script.js"></script>
 </body>
+
 </html>
